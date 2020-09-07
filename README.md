@@ -69,7 +69,7 @@ The process consists of 4 steps that must be repeated for each product.
   
 ## Attention in CNN
 
-Integration with markets where users can sell or buy products cheaper, like OLX, has been a focus when developing the project. Since products from the same maker have almost the same name, which is not differentiated by the site's search engine, I've devoleped fine grained image classifier improving the difference between real price and predicted price to <100 RON (>500 RON without the classifier).
+Integration with markets where users can sell or buy products cheaper, like OLX, has been a focus when developing the project. Since products from the same maker have almost the same name, which is not differentiated by the site's search engine, I've developed fine grained image classifier improving the difference between real price and predicted price to <100 RON (>500 RON without the classifier).
 
 
 This has been achieved by training a VGG-16 model and changing the architecture by adding 3 attention layers in feature extraction layers(before a maxpool layer).
@@ -88,4 +88,4 @@ Want to read more about my project? You can here:
   <li><a href="https://github.com/AndreiFlorescu1410/MAARC/raw/master/Licen%C8%9B%C4%83%20PDF/Rezumat_licenta.pdf">Thesis summary</a></li>
   <li><a href="https://github.com/AndreiFlorescu1410/MAARC/raw/master/Licen%C8%9B%C4%83%20PDF/Licenta_AF.pdf">Thesis document</a></li>
 </ul>
-<sub><sup>(*Disclaimer: Both documents are written in romanian.)</sup></sub>
+<sub><sup>(*Disclaimer: Both documents are written in Romanian.)</sup></sub>
