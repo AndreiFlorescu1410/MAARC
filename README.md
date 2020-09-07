@@ -3,8 +3,8 @@
 </h1>
 
 
-<h4 align="center">The project is now live here <a href="http://www.maarc.tk/" target="_blank">MAARC.tk</a>.</h4>
-
+<h4 align="center">The project is now live here <a href="http://www.maarc.tk/" target="_blank">MAARC.tk</a>.</h4><p align="center">
+<sub><sup>(*Disclaimer: Because of Heroku usage policy, the node.js server could be sleeping when visiting the site. Refreshing after a few seconds should wake Heroku up.)</sup></sub></p>
 
 <p align="center">
     <a href="https://github.com/ArmynC/ArminC-AutoExec/commits/master">
