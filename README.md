@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/github/last-commit/AndreiFlorescu1410/MAARC"
          alt="GitHub last commit">
     <a href="http://www.maarc.tk/">
-    <img src="https://img.shields.io/website?url=http%3A%2F%2Fwww.maarc.tk%2F"
+    <img src="https://img.shields.io/website?url=https%3A%2F%2Fmaarc.herokuapp.com%2F"
          alt="Website">
     <img src="https://img.shields.io/github/languages/count/AndreiFlorescu1410/MAARC?color=light%20green"
          alt="MIT License">   
