@@ -76,8 +76,10 @@ This has been achieved by training a VGG-16 model and changing the architecture 
 <p align="center">
 <img src="https://github.com/AndreiFlorescu1410/MAARC/blob/master/poze/gvgg.png?raw=true" width="550" alt="Vgg-16 model">   
 </p>
-After training for 80 epochs, the training and validation accuracy reach 99%.
-See how I trained the model <a href="https://github.com/AndreiFlorescu1410/MAARC/blob/master/python%20code/CNNAttention.ipynb">here</a>.
+<p>After training for 80 epochs, the training and validation accuracy reach 99%.</p>
+<p>See how I trained the model <a href="https://github.com/AndreiFlorescu1410/MAARC/blob/master/python%20code/CNNAttention.ipynb">here</a>.</p>
+
+
 ## Back-end server
 The web app it's connected to the database using a node.js server, which handles all the queries for fetching data. The server among with the database is hosted using Heroku dyno and ClearDB MySQL for 24/7 availability.
 
