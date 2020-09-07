@@ -41,9 +41,23 @@
 
 ## About
 
+<table>
+<tr>
+<td>
+  
+  **MAARC** is a web-based solution for misleading price advertising by providing the user easy-to-read graphs and predictions of the price for a specific product. 
+<br>Structuring the price data as a time series I've used ARIMA models for predicting the future shape of price evolution. 
+<br>Constantly changing URL of a product made it opportune to develop a fine grained image classifier based on a pre-trained VGG-16 with added attention layers which solves the problem with a accuracy of 99%.
+
+</p>
+
+</td>
+</tr>
+</table>
+
 
 ## App Screenshots
 
-Desktop App  Login         |  Desktop App Open | Web App  computer  hard drives       |  Web App computer hard drives Open
+Homepage         |  Product page | Search engine       |  Register form
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://raw.githubusercontent.com/supunlakmal/thismypc/master/thisMyPCWeb/src/assets/images/screen/app-login.PNG" title="Desktop App  Login " width="100%"> |<img src="https://raw.githubusercontent.com/supunlakmal/thismypc/master/thisMyPCWeb/src/assets/images/screen/app-home.PNG" title="Desktop App Open" width="100%">|<img src="https://raw.githubusercontent.com/supunlakmal/thismypc/master/thisMyPCWeb/src/assets/images/screen/web-system.PNG" title="Web App  PC  Drivers" width="100%"> |<img src="https://raw.githubusercontent.com/supunlakmal/thismypc/master/thisMyPCWeb/src/assets/images/screen/web-system.PNG" title="Web App  PC  Drivers" width="100%">
+<img src="https://github.com/AndreiFlorescu1410/MAARC/blob/master/poze/ghomepage.gif?raw=true" title="Desktop App  Login " width="100%"> |<img src="https://github.com/AndreiFlorescu1410/MAARC/blob/master/poze/gprod.PNG?raw=true" title="Desktop App Open" width="100%">|<img src="https://github.com/AndreiFlorescu1410/MAARC/blob/master/poze/gsearch.PNG?raw=true" title="Web App  PC  Drivers" width="100%"> |<img src="https://github.com/AndreiFlorescu1410/MAARC/blob/master/poze/glogin.PNG?raw=true" title="Web App  PC  Drivers" width="100%">
