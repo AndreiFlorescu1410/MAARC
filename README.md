@@ -88,3 +88,4 @@ Want to read more about my project? You can here:
   <li><a href="https://github.com/AndreiFlorescu1410/MAARC/raw/master/Licen%C8%9B%C4%83%20PDF/Rezumat_licenta.pdf">Thesis summary</a></li>
   <li><a href="https://github.com/AndreiFlorescu1410/MAARC/raw/master/Licen%C8%9B%C4%83%20PDF/Licenta_AF.pdf">Thesis document</a></li>
 </ul>
+<sub><sup>(*Disclaimer: Both documents are written in romanian.)</sup></sub>
