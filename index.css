@@ -1,0 +1,8 @@
+.topnavbar {
+
+    padding: 0.5rem 1.5rem; background-color: transparent; box-shadow: none
+}
+
+.searchnavbar { 
+    transform: translate(4vw, 50vh);
+}

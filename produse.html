@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <link type="text/CSS" rel="stylesheet" href="style.css" />
+    <link type="text/CSS" rel="stylesheet" href="produse.css" />
+    <title>MAARC - Compara produse online</title>
+    <!-- <link rel="shortcut icon" type="image/jpg" href="poze/favicon.ico" />	 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!----------START NAVBAR---------->
+
+    <div id="navbar"></div>
+    <!----------END NAVBAR---------->
+    <!----------START MODAL PENTRU ADAUGARE PRODUS NOU---------->
+    <div id="id04" class="modal">
+        <form class="modal-content animate" onsubmit="add_new_prod()">
+            <div class="container1">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id04').style.display='none'" class="close">&times;</span>
+                    <h2 align="center">Adaugă un produs nou!</h2>
+                </div>
+                <hr>
+                <!-- Descriere produs -->
+                <input type="text" placeholder="Producătorul produsului" id="prodprod" required>
+                <img id="checked6" src="poze/checked.png"
+                    style="float:right; transform: translate(-5px,-40px);margin-bottom:-40px;display:none;z-index:2;" />
+
+
+                <!-- Descriere produs -->
+                <input type="text" placeholder="Descrierea produsului" id="proddesc" required>
+                <img id="checked4" src="poze/checked.png"
+                    style="float:right; transform: translate(-5px,-40px);margin-bottom:-40px;display:none;z-index:2;" />
+
+                <!-- imagine -->
+                <input type="text" placeholder="Adresa URL a imaginii de prezentare" id="produrl" required>
+                <img id="checked5" src="poze/checked.png"
+                    style="float:right; transform: translate(-5px,-40px);margin-bottom:-40px;display:none;" />
+                <div class="passvalidation">
+                    <span id="new-image-alert">Adresă url invalidă.</span>
+                </div>
+                <p id="new-image-p" style="display: none;">Previzualizează imaginea:</p>
+                <img id="new-image" style="display: none;height: 100px;" />
+
+                <button id="createbtn-add1" disabled>Adaugă produs</button>
+
+                <div class="createdalert">Produs adăugat cu succes!</div>
+                <div class="notcreatedalert">Ceva nu a mers bine!</div>
+            </div>
+        </form>
+    </div>
+    <!----------END MODAL PENTRU ADAUGARE PRODUS NOU---------->
+
+    <div style="flex: 1;">
+        <div class="containerprod">
+
+            <h1 style="margin: 0;width: 100%;margin-bottom: 50px;padding: 0;">Rezultatele căutării</h1>
+
+            <button onclick="document.getElementById('id04').style.display='block'" class="addbutton pull-right"> +
+                Adauga produs nou</button>
+
+            <div class="prod" style="margin-left:10px;">
+                <table class="stores">
+                    <colgroup>
+                        <col span="1" style="width: 10%;">
+                        <col span="1" style="width: 50%;">
+                        <col span="1" style="width: 20%;">
+                        <col span="1" style="width: 20%;">
+                    </colgroup>
+
+                    <tbody>
+                        <tr>
+                            <th>Produs</th>
+                            <th>Descriere Produs</th>
+                            <th>Pret</th>
+                            <th>Mai multe detalii</th>
+                            <th></th>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+
+        <span class="footer-logo-text">2020 MAARC <br>Modelele ARIMA și atenția în rețele neuronale convoluționale
+            pentru compararea<br>
+            produselor online</span>
+        <img src="poze/Logo-UB-orizontal-ALB-limba-romana_116.png" height="50px" style="text-align: center;" />
+
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+        crossorigin="anonymous"></script>
+    <script>$('#navbar').load('navbar.html');</script>
+    <script src="jsquery.js"></script>
+    <script src="produse.js"></script>
+
+</html>

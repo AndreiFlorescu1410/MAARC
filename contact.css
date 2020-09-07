@@ -1,0 +1,60 @@
+body {
+	background-color: #d7d9db;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.containerprod input[type=text],
+.containerprod input[type=password],
+#subiect {
+	width: 100%;
+	padding: 12px 35px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 6px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.topnavbar {
+	background-color: white;
+}
+
+.topnavbar a {
+	color: #404144;
+}
+
+#subiect {
+	padding: 12px 15px!important;
+	resize: none;
+	overflow: hidden;
+	min-height: 100px;
+	max-height: 250px;
+}
+
+.containerprod {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 9vh;
+	padding: 25px;
+	background-color: white;
+	font-size: 20px;
+	border-radius: 10px;
+	vertical-align: top;
+	/* display: inline-grid; */
+	/* width: 80%; */
+}
+
+.container-contact {
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 8%;
+	grid-auto-flow: row;
+	position: relative;
+	margin-top: 30px !important;
+	text-align: center;
+}

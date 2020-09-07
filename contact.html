@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <link type="text/CSS" rel="stylesheet" href="style.css" />
+    <link type="text/CSS" rel="stylesheet" href="contact.css" />
+    <title>MAARC - Compara produse online</title>
+    <!-- <link rel="shortcut icon" type="image/jpg" href="poze/favicon.ico" />	 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!----------START NAVBAR---------->
+    <div id="navbar"></div>
+    <!----------END NAVBAR---------->
+
+    <div style="flex: 1;">
+        <div class="containerprod">
+            <h2 align="center">Contactează-ne</h2>
+            <hr>
+
+            <div class="container-contact">
+                <div>
+                    <form onsubmit="send_message()" id="contact-form">
+                        <h3>Formular de contact</h3>
+                        <!-- NUME PRENUME -->
+                        <a style="float: left;">Nume și prenume:</a>
+                        <input type="text" placeholder=""
+                            style="background: url(poze/name.png) no-repeat scroll 7px 7px;z-index:2;"
+                            id="numeprenume-contact" required>
+                        <img id="checked-contact" src="poze/checked.png"
+                            style="float:right; transform: translate(-5px,-40px);margin-bottom:-40px;display:none;z-index:2;" />
+
+
+
+                        <!-- E-MAIL -->
+                        <a style="float: left;">Adresa E-Mail:</a>
+                        <input type="text" placeholder="" id="email-contact"
+                            style="background: url(poze/user.png) no-repeat scroll 7px 7px;" required>
+                        <img id="checked2-contact" src="poze/checked.png"
+                            style="float:right; transform: translate(-5px,-40px);margin-bottom:-40px;display:none;" />
+                        <div class="passvalidation">
+                            <span id="parolanesigura-contact" style="text-align: left;">Adresa de E-Mail
+                                invalidă.</span>
+                        </div>
+
+                        <a style="float: left;">Mesajul tău</a><br>
+                        <textarea id="subiect" name="subiect" placeholder="Mesajul dvs..." oninput="auto_grow(this)"
+                            required></textarea>
+
+                        <button onclick="Functie()" id="send-contact">Trimite</button>
+                        <div class="createdalert">Mesaj trimis cu succes!</div>
+                        <div class="notcreatedalert">Ceva nu a mers bine!</div>
+                    </form>
+                </div>
+                <div style="width: 100%"><iframe width="100%" height="450px"
+                        src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;coord=44.43551887474495, 26.099739074707035&amp;q=Bulevardul%20Regina%20Elisabeta%204+(Facultatea%20de%20Matematic%C4%83%20%C8%99i%20Informatic%C4%83)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><br />
+            </div>
+        </div>
+    </div>
+
+    <!----------START FOOTER---------->
+    <footer style="margin-top: -0px;">
+
+        <span class="footer-logo-text">2020 MAARC <br>Modelele ARIMA și atenția în rețele neuronale convoluționale
+            pentru compararea<br>
+            produselor online</span>
+        <img src="poze/Logo-UB-orizontal-ALB-limba-romana_116.png" height="40px" style="text-align: center;" />
+
+
+    </footer>
+    <!----------END NAVBAR---------->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+        crossorigin="anonymous"></script>
+    <script>$('#navbar').load('navbar.html');</script>
+    <script src="contact.js"></script>
+
+</html>

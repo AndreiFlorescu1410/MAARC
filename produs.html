@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <link type="text/CSS" rel="stylesheet" href="style.css" />
+    <link type="text/CSS" rel="stylesheet" href="paginaprodus.css" />
+    <title>MAARC - Compara produse online</title>
+    <!-- <link rel="shortcut icon" type="image/jpg" href="poze/favicon.ico" />	 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!----------START NAVBAR---------->
+    <div id="navbar"></div>
+
+    <!----------END NAVBAR---------->
+    <div style="flex: 1;	margin:0 auto;">
+        <div class="containerprod">
+            <div class="prod">
+                <div style="margin: 0 auto;display: block;">
+                    <img src="" style="width: 400px;display:block; margin:0 auto;" />
+                </div>
+                <br>
+                <div class="price-container">
+                    <table class="priceprod">
+                        <tr>
+                            <td id="pricelowtitle" class="pricetitleselected"> Preț minim</td>
+                            <td id="pricemeantitle">Preț mediu</td>
+                        </tr>
+                        <tr id="pricemean">
+                            <td colspan="2">
+                                <h2 style="margin:10px; margin-bottom:10px;"><a id="pricemeanheader"
+                                        style="font-size: 40px;">--.--</a><a id="pricemeanchange"></a><a
+                                        class="prodshipping">vs ieri</a></h2>
+                                <div id="pointerimg-mean">
+                                    <img style="margin-left: -16px;" src="poze/pointer.png" />
+                                </div>
+                                <div class="bgbar">
+                                    <div class="bar"></div>
+                                </div>
+                                <div style="font-weight:600;margin-top:5px;"><a id="pricemean1"
+                                        style="float:left;">----</a><a id="pricemean2"
+                                        style="float:right;">----.--</a><a class="prodshipping">evoluția în ultimele 7
+                                        zile</a>
+                                </div>
+
+
+                            </td>
+                        </tr>
+                        <tr id="pricelow">
+                            <td colspan="2">
+                                <h2 style="margin:10px; margin-bottom:10px;"><a id="pricelowheader"
+                                        style="font-size: 40px;">----</a><a id="pricelowchange"
+                                        style="color:#87C38F"></a><a class="prodshipping">vs ieri</a></h2>
+                                <div id="pointerimg-low">
+                                    <img style="margin-left: -16px;" src="poze/pointer.png" />
+                                </div>
+                                <div class="bgbar">
+                                    <div class="bar"></div>
+                                </div>
+                                <div style="font-weight:600;margin-top:5px;"><a id="pricelow1"
+                                        style="float:left;">----</a><a class="prodshipping">evoluția în ultimele 7
+                                        zile</a><a id="pricelow2" style="float:right;">----</a>
+                                </div>
+
+
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="descprod">
+                        <colgroup>
+                            <col span="1" style="width: 30%;">
+                            <col span="1" style="width: 70%;">
+                        </colgroup>
+                        <tr>
+                            <td>Producător</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Model</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="prod" style="margin-left:10px;" id="scrollable">
+                <div id="graph-container">
+                    <canvas id="myChart" height="100px"></canvas></div>
+                <div class="alert">
+                    <span class="closebtn"
+                        onclick="this.parentElement.style.animationName = 'dismiss,hide';">&times;</span>
+                    Anumite funcționalități pot lipsi pentru utilizatorii neautentificați. <a
+                        id="autentificare">Autentifică-te apăsând aici.</a>
+                </div>
+                <table class="stores">
+                    <colgroup>
+                        <col span="1" style="width: 20%;">
+                        <col span="1" style="width: 40%;">
+                        <col span="1" style="width: 10%;">
+                        <col span="1" style="width: 20%;">
+                        <col span="1" style="width: 10%;">
+                    </colgroup>
+                    <tr>
+                        <th>Magazin</th>
+                        <th style="width:100px">Produs</th>
+                        <th>Stoc</th>
+                        <th>Pret</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+
+                    </tr>
+
+                </table>
+
+                <script>
+
+                </script>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+        <span class="footer-logo-text">2020 MAARC <br>Modelele ARIMA și atenția în rețele neuronale convoluționale
+            pentru compararea<br>
+            produselor online</span>
+        <img src="poze/Logo-UB-orizontal-ALB-limba-romana_116.png" height="50px" style="text-align: center;" />
+
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+        crossorigin="anonymous"></script>
+    <script src="graph.js"></script>
+    <script src="produs.js"></script>
+
+</html>

@@ -1,0 +1,256 @@
+<div class="topnavbar">
+    <a style="font-size: 25px;" active href="index.html">MAARC</a>
+
+    <div class="searchnavbar">
+        <div class="formsearch">
+            <form action="/produse.html">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <span><input type="text" placeholder="Caută produsul ..." name="search"></span>
+            </form>
+        </div>
+    </div>
+    <div class="righttopnavbar">
+        <a href="/contact.html">Contact</a>
+        <a href="#" onclick="document.getElementById('id01').style.display='block'" id="log_in_text">Log in</a>
+    </div>
+</div>
+<!-- TODO: BACKGROUND IMG DE LA INPUTURI SUB FORMA DE <img> -->
+<!----------START DIV PENTRU LOGIN---------->
+<div id="id01" class="modal">
+
+    <form class="modal-content animate" onsubmit="login()">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+            <h2>Contul meu</h2>
+        </div>
+
+        <div class="container1">
+            <input type="text" placeholder="E-Mail" style="background: url(poze/user.png) no-repeat scroll 7px 7px;"
+                id="emaillogin" required>
+
+            <input type="password" placeholder="Parolă" style="background: url(poze/pass.png) no-repeat scroll 7px 7px;"
+                id="passlogin" required>
+
+            <button id="auth">Autentificare</button>
+            <div class="notcreatedalert">Ceva nu a mers bine. Încercați mai târziu.</div>
+            <div class="notcreatedalert">Ați introdus un E-Mail sau o parolă greșită!</div>
+            <div class="createdalert">Autentificare cu succes!</div>
+        </div>
+        <div class="container2">
+            <a href="#" onclick="openforgot()" ;>Ai uitat parola?</a>
+            <a href="#" onclick="opennewaccount()" style="float:right;" ;>Creează cont nou!</a>
+        </div>
+    </form>
+</div>
+<!----------END DIV PENTRU LOGIN---------->
+<!----------START DIV PENTRU REGISTER---------->
+<div id="id02" class="modal">
+    <form class="modal-content animate" onsubmit="checkemail(register)">
+        <div class="container1">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
+                <h2 align="center">Creează un cont nou</h2>
+            </div>
+            <hr>
+            <!-- NUME PRENUME -->
+            <input type="text" placeholder="Numele si Prenumule"
+                style="background: url(poze/name.png) no-repeat scroll 7px 7px;z-index:2;" id="numeprenume" required>
+            <img id="checked" src="poze/checked.png"
+                style="float:right; transform: translate(-5px,-40px);margin-bottom:-40px;display:none;z-index:2;" />
+
+            <!-- PAROLA -->
+            <input type="password" placeholder="Parola" style="background: url(poze/pass.png) no-repeat scroll 7px 7px;"
+                id="psw" required>
+            <img id="checked1" src="poze/checked.png"
+                style="float:right; transform: translate(-5px,-40px);margin-bottom:-40px;display:none;" />
+            <div class="passvalidation">
+                <span id="parolanesigura">Parola trebuie să conțină cel puțin <a id="litera" style="font-weight:600;">o
+                        literă</a>, <a id="cifra" style="font-weight:600;">o cifră</a> si
+                    minimum <a id="lungime" style="font-weight:600;">6 caractere</a>.</span>
+            </div>
+
+            <!-- E-MAIL -->
+            <input type="text" placeholder="E-Mail" id="email"
+                style="background: url(poze/user.png) no-repeat scroll 7px 7px;" required>
+            <img id="checked2" src="poze/checked.png"
+                style="float:right; transform: translate(-5px,-40px);margin-bottom:-40px;display:none;" />
+            <div class="passvalidation">
+                <span id="parolanesigura">Adresa de E-Mail invalidă.</span>
+            </div>
+            <div class="sameemail">Această adresă de e-mail este deja folosită.</div>
+
+            <!-- SECRET QUESTION -->
+            <p>Alege o întrebare de securitate la care doar tu poți răspunde:</p> <br>
+            <select required id="question">
+                <option disabled selected value> -- alege o întrebare -- </option>
+                <option value="1">Care era porecla dvs. în copilărie?</option>
+                <option value="2">Care este numele primei dvs. școli?</option>
+                <option value="3">Care este numele localității în care s-au întâlnit părinții dvs.?</option>
+                <option value="4">Care era numele primului dvs. animal de companie?</option>
+                <option value="5">Care este numele localității în care v-ați născut?</option>
+                <option value="6">Care este prenumele celui mai în vârsta văr al dvs.?</option>
+            </select>
+            <input type="text" placeholder="Răspuns" id="answer" required>
+            <img id="checked3" src="poze/checked.png"
+                style="float:right; transform: translate(-5px,-40px);margin-bottom:-40px;display:none;" />
+
+
+
+
+
+            <button id="createbtn" disabled>Creeaza cont</button>
+
+            <div class="createdalert">Cont creat cu succes!</div>
+            <div class="notcreatedalert">Ceva nu a mers bine!</div>
+        </div>
+
+        <div class="container2" align="center">
+            <a href="#" onclick="openlogin()" ;>Ești deja inregistrat? Click aici pentru a te conecta!</a>
+        </div>
+    </form>
+</div>
+<!----------END DIV PENTRU REGISTER---------->
+
+<!----------START DIV PENTRU RECOVER---------->
+<div id="id03" class="modal">
+    <form class="modal-content animate" onsubmit="recoveremail(recoverpass)">
+        <div class="container1">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id03').style.display='none'" class="close">&times;</span>
+                <h2 align="center">Recuperează parola</h2>
+            </div>
+            <hr>
+            <!-- E-MAIL -->
+            <input type="text" placeholder="E-Mail" id="email-recover"
+                style="background: url(poze/user.png) no-repeat scroll 7px 7px;z-index: 5;" required>
+            <img id="checked2-recover" src="poze/checked.png"
+                style="float:right; transform: translate(-5px,-40px);margin-bottom:-40px;display:none;z-index: 5;" />
+            <div class="passvalidation">
+                <span id="parolanesigura">Adresă de E-Mail invalidă.</span>
+            </div>
+            <div class="sameemail">Această adresă de e-mail nu aparține unui cont.</div>
+
+            <!-- ANSWER -->
+            <p id="QuestionText" style="display: none;"></p>
+            <input type="text" placeholder="Răspuns" id="answer-recover" style="display: none;">
+            <img id="checked2-recover1" src="poze/checked.png"
+                style="float:right; transform: translate(-5px,-40px);margin-bottom:-40px;display:none;z-index: 5;" />
+            <div class="sameemail">Răspuns greșit.</div>
+
+            <!-- PASSWORD -->
+            <p id="PassText" style="display: none;">Introduceți noua parolă: </p>
+            <input type="password" placeholder="Noua Parolă"
+                style="background: url(poze/pass.png) no-repeat scroll 7px 7px; display: none;" id="psw-recover">
+            <img id="checked1-recover" src="poze/checked.png"
+                style="float:right; transform: translate(-5px,-40px);margin-bottom:-40px;display:none;" />
+            <div class="passvalidation">
+                <span id="parolanesigura-recover">Parola trebuie să conțină cel puțin <a id="litera-recover"
+                        style="font-weight:600;">o literă</a>, <a id="cifra-recover" style="font-weight:600;">o
+                        cifră</a> si
+                    minimum <a id="lungime-recover" style="font-weight:600;">6 caractere</a>.</span>
+            </div>
+
+            <button id="createbtn-recover" disabled>Continuă</button>
+
+
+            <div class="createdalert">Parolă schimbată cu succes!</div>
+            <div class="notcreatedalert">Ceva nu a mers bine!</div>
+        </div>
+
+        <div class="container2" align="center">
+            <a href="#" onclick="openlogin()" ;>Ți-ai reaminintit parola? Click aici pentru a te conecta.</a>
+        </div>
+    </form>
+</div>
+
+
+<!-- STARD DIV PENTRU LOG OUT -->
+
+<div id="id05" class="modal">
+    <form class="modal-content animate" onsubmit="log_out()">
+        <div class="container1">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id05').style.display='none'" class="close">&times;</span>
+                <h2 align="center" id="log_in_text2"></h2>
+            </div>
+            <hr>
+
+            <button id="createbtn-add">Deconectează-te!</button>
+        </div>
+    </form>
+</div>
+<!-- END DIV PENTRU LOG OUT -->
+
+
+
+<script>
+    var RegexLitera = new RegExp("^(?=.*[a-zA-Z])");
+    var RegexCifra = new RegExp("^(?=.*[0-9])");
+    var RegexLungime = new RegExp("^(?=.{6,})");
+    $('#psw').keyup(function () {
+
+        if (RegexCifra.test(document.getElementById("psw").value)) {
+            document.getElementById("cifra").style.textDecoration = "line-through";
+        }
+        else {
+            document.getElementById("cifra").style.textDecoration = "none";
+        }
+        if (RegexLitera.test(document.getElementById("psw").value)) {
+            document.getElementById("litera").style.textDecoration = "line-through";
+        }
+        else {
+            document.getElementById("litera").style.textDecoration = "none";
+        }
+        if (RegexLungime.test(document.getElementById("psw").value)) {
+            document.getElementById("lungime").style.textDecoration = "line-through";
+        }
+        else {
+            document.getElementById("lungime").style.textDecoration = "none";
+        }
+        if (RegexCifra.test(document.getElementById("psw").value) || RegexLitera.test(document.getElementById("psw").value) || RegexLungime.test(document.getElementById("psw").value)) {
+            document.getElementsByClassName("passvalidation")[0].style.boxShadow = "5px 0 5px -5px  #FFA600, 0 5px 5px -5px #FFA600, -5px 0 5px -5px #FFA600";
+            document.getElementsByClassName("passvalidation")[0].style.backgroundColor = "#FFF3DD";
+            document.getElementById("psw").style.boxShadow = "0px 0px 5px #FFA600"
+            document.getElementsByClassName("passvalidation")[0].style.display = "block";
+            document.getElementById("parolanesigura").style.display = "block";
+            document.getElementById("checked1").style.display = "none";
+            document.getElementById("createbtn").disabled = true;
+        }
+        //CORECT
+        if (RegexCifra.test(document.getElementById("psw").value) && RegexLitera.test(document.getElementById("psw").value) && RegexLungime.test(document.getElementById("psw").value)) {
+            document.getElementById("psw").style.boxShadow = "0px 0px 5px #1B7940" //boxShadow pentru input de parola
+            document.getElementsByClassName("passvalidation")[0].style.display = "none"; //ascund passvalidation
+            document.getElementById("checked1").style.display = "block";//arat checkmark-ul
+            check();
+        }
+    });
+
+
+
+</script>
+
+<script>
+    var username = localStorage.getItem('userlogat');
+    if (username != null) {
+        document.getElementById('log_in_text').innerHTML = 'Bun venit, ' + username + '!';
+        document.getElementById('log_in_text2').innerHTML = 'Bun venit, ' + username + '!';
+        document.getElementById("log_in_text").onclick = function () { document.getElementById('id05').style.display = 'block'; };
+    }
+    function log_out() {
+        localStorage.clear();
+        window.location.reload();
+
+    }
+</script>
+
+
+<script src="jsquery.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177410871-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-177410871-1');
+</script>
