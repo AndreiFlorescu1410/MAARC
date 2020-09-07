@@ -28,7 +28,8 @@
   <a href="#app-screenshots">App Screenshots</a> •
   <a href="#arima-models">ARIMA models</a> •
   <a href="#attention-in-cnn">Attention in CNN</a> •
-  <a href="#back-end-server">Back-end server</a>
+  <a href="#back-end-server">Back-end server</a> •
+  <a href="#read-more">Read more</a>
 </p>
 
 ---
@@ -79,3 +80,11 @@ After training for 80 epochs, the training and validation accuracy reach 99%.
 
 ## Back-end server
 The web app it's connected to the database using a node.js server, which handles all the queries for fetching data. The server among with the database is hosted using Heroku dyno and ClearDB MySQL for 24/7 availability.
+
+
+## Read more
+Want to read more about my project? You can here:
+<ul>
+  <li><a href="https://github.com/AndreiFlorescu1410/MAARC/raw/master/Licen%C8%9B%C4%83%20PDF/Rezumat_licenta.pdf">Thesis summary</a></li>
+  <li><a href="https://github.com/AndreiFlorescu1410/MAARC/raw/master/Licen%C8%9B%C4%83%20PDF/Licenta_AF.pdf">Thesis document</a></li>
+</ul>
