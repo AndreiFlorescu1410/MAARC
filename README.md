@@ -42,7 +42,7 @@
   <ul>
     <li>  <strong>MAARC</strong> is a web-based solution, built from scratch, for misleading price advertising by providing the user easy-to-read graphs and predictions of the price for a specific product. </li>
   <li>Structuring the price data as a time series I've used ARIMA models for predicting the future shape of price evolution. </li>
-  <li>Constantly changing URL of a product made it opportune to develop a fine grained image classifier based on a pre-trained VGG-16 with added attention layers which solves the problem with a accuracy of 99%.</li>
+  <li>Constantly changing URL of a product made it imperative to develop a fine grained image classifier based on a pre-trained VGG-16 with added attention layers which solves the problem with a accuracy of 99%.</li>
 </ul>
 </p>
 
