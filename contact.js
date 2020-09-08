@@ -6,9 +6,9 @@ function send_message() {  //SEND CONTACT MESSAGES
 		sendbutton = document.getElementById("send-contact");
 		sendbutton.disabled = false;
 		clearInterval(loading);
-		sendbutton.innerHTML = "Creează cont";
+		sendbutton.innerHTML = "Trimite";
 		if (xhr.status >= 200 && xhr.status < 300) {
-			document.getElementsByClassName("createdalert")[2].style.display = "block";
+			document.getElementsByClassName("createdalert")[3].style.display = "block";
 			console.log("sS");
 			// setTimeout(function(){ location.reload(); }, 1000);	
 		} else {
