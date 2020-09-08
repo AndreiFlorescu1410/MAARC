@@ -13,6 +13,9 @@
     <a href="http://www.maarc.tk/">
     <img src="https://img.shields.io/website?url=https%3A%2F%2Fmaarc.herokuapp.com%2F"
          alt="Website">
+         <a href="http://www.maarc.tk/">
+    <img src="https://img.shields.io/uptimerobot/ratio/m785930976-2be0864a494972dae54120cd"
+         alt="Website uptime">
     <img src="https://img.shields.io/github/languages/count/AndreiFlorescu1410/MAARC?color=light%20green"
          alt="MIT License">   
        <a href="https://opensource.org/licenses/MIT">
