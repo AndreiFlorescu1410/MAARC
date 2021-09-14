@@ -3,19 +3,11 @@
 </h1>
 
 
-<h4 align="center">The project is now live here <a href="http://www.maarc.tk/" target="_blank">MAARC.tk</a>.</h4><p align="center">
-<sub><sup>(*Disclaimer: Because of Heroku usage policy, the node.js server could be sleeping when visiting the site. Refreshing after a few seconds should wake Heroku up.)</sup></sub></p>
 
 <p align="center">
     <a href="https://github.com/ArmynC/ArminC-AutoExec/commits/master">
     <img src="https://img.shields.io/github/last-commit/AndreiFlorescu1410/MAARC"
          alt="GitHub last commit">
-    <a href="http://www.maarc.tk/">
-    <img src="https://img.shields.io/website?url=https%3A%2F%2Fmaarc.herokuapp.com%2F"
-         alt="Website">
-         <a href="http://www.maarc.tk/">
-    <img src="https://img.shields.io/uptimerobot/ratio/m785930976-2be0864a494972dae54120cd"
-         alt="Website uptime">
     <img src="https://img.shields.io/github/languages/count/AndreiFlorescu1410/MAARC?color=light%20green"
          alt="MIT License">   
        <a href="https://opensource.org/licenses/MIT">
